@@ -140,7 +140,7 @@ If you want to commit files "across different branches", here are two ways to do
 
 ### Tagging
 
-You can use the `tag` option to enter the arguments for a `git add` command. In order for the action to isolate the tag name from the rest of the arguments, it should be the first word not preceded by an hyphen (e.g. `-a tag-name -m "some other stuff"` is ok).  
+You can use the `tag` option to enter the arguments for a `git tag` command. In order for the action to isolate the tag name from the rest of the arguments, it should be the first word not preceded by an hyphen (e.g. `-a tag-name -m "some other stuff"` is ok).  
 You can also change the arguments of the push command for tags: every argument in the `tag_push` input will be appended to the `git push --tags` command.  
 For more info on how git arguments are parsed, see [the "Git arguments" section](#git-arguments).
 
@@ -166,7 +166,7 @@ If you want to make some changes, you have to checkout the branch the PR is comi
 You can set it up like this:
 
 ```yaml
-- uses: actions/checkout@v3
+- uses: actions/checkout@v4
   with:
     repository: ${{ github.event.pull_request.head.repo.full_name }}
     ref: ${{ github.event.pull_request.head.ref }}
@@ -269,10 +269,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
 
       - name: Install dependencies
         run: npm install
@@ -304,7 +304,7 @@ jobs:
 
     steps:
       # If you need to, you can check out your repo to a different location
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           path: './pathToRepo/'
 
@@ -399,6 +399,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://azeemba.com/"><img src="https://avatars.githubusercontent.com/u/2160795?v=4?s=100" width="100px;" alt="Azeem Bande-Ali"/><br /><sub><b>Azeem Bande-Ali</b></sub></a><br /><a href="https://github.com/EndBug/add-and-commit/commits?author=azeemba" title="Documentation">📖</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/ViacheslavKudinov"><img src="https://avatars.githubusercontent.com/u/56436734?v=4?s=100" width="100px;" alt="Viacheslav Kudinov"/><br /><sub><b>Viacheslav Kudinov</b></sub></a><br /><a href="#security-ViacheslavKudinov" title="Security">🛡️</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/justanotheranonymoususer"><img src="https://avatars.githubusercontent.com/u/5781692?v=4?s=100" width="100px;" alt="justanotheranonymoususer"/><br /><sub><b>justanotheranonymoususer</b></sub></a><br /><a href="https://github.com/EndBug/add-and-commit/issues?q=author%3Ajustanotheranonymoususer" title="Bug reports">🐛</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://cderv.rbind.io"><img src="https://avatars.githubusercontent.com/u/6791940?v=4?s=100" width="100px;" alt="Christophe Dervieux"/><br /><sub><b>Christophe Dervieux</b></sub></a><br /><a href="https://github.com/EndBug/add-and-commit/commits?author=cderv" title="Documentation">📖</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/deining"><img src="https://avatars.githubusercontent.com/u/18169566?v=4?s=100" width="100px;" alt="Andreas Deininger"/><br /><sub><b>Andreas Deininger</b></sub></a><br /><a href="https://github.com/EndBug/add-and-commit/commits?author=deining" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>

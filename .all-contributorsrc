@@ -479,8 +479,36 @@
       "contributions": [
         "security"
       ]
+    },
+    {
+      "login": "justanotheranonymoususer",
+      "name": "justanotheranonymoususer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5781692?v=4",
+      "profile": "https://github.com/justanotheranonymoususer",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "cderv",
+      "name": "Christophe Dervieux",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6791940?v=4",
+      "profile": "https://cderv.rbind.io",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "deining",
+      "name": "Andreas Deininger",
+      "avatar_url": "https://avatars.githubusercontent.com/u/18169566?v=4",
+      "profile": "https://github.com/deining",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }
